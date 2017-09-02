@@ -37,19 +37,6 @@ extension String {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class LaraCrypt: NSObject {
     
     //MARK: Generating random string with 16 char length
@@ -224,11 +211,7 @@ public class LaraCrypt: NSObject {
         //Serialized Decrypted Message
         let deceSrializedString:String = String(data: decAsData as Data, encoding: String.Encoding.utf8)!
         
-        //Unserialized Decrypted Message
-        let decrypted:String = stringUnserilizer(String: deceSrializedString)
-        
-        
-        return decrypted
+        return deceSrializedString
     }
     
     
