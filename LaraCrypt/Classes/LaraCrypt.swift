@@ -144,7 +144,7 @@ public class LaraCrypt: NSObject {
     }
     
     //MARK: Laravel encryption method
-    public func encrypt(Message message:String,Key key:String) -> String {
+    @objc public func encrypt(Message message:String,Key key:String) -> String {
         
         //Preparing initial data
         let serilizedMessage  = stringSerilizer(String: message)
@@ -181,7 +181,7 @@ public class LaraCrypt: NSObject {
     }
     
     //MARK: Laravel decryption method
-    public func decrypt(Message message:String,Key key:String) -> String {
+    @objc public func decrypt(Message message:String,Key key:String) -> String {
         
         //Preparing initial data
         let keyData:Data = Data(base64Encoded: key)!
